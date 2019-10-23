@@ -348,6 +348,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service \
     power.qcom
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-service.8916
+
 # Radio
 PRODUCT_PACKAGES += \
     librmnetctl \

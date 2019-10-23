@@ -142,9 +142,6 @@ AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 
-# Healthd
-BOARD_HAL_STATIC_LIBRARIES := libhealthd.lineage
-
 # Kernel
 BOARD_KERNEL_CMDLINE += \
 	console=null \
@@ -202,9 +199,9 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/vendor/bin/hw/rild=27
 
 # Power
-TARGET_POWERHAL_VARIANT := qcom
-CM_POWERHAL_EXTENSION := qcom
-WITH_QC_PERF := true
+TARGET_HAS_NO_WLAN_STATS := true
+TARGET_USES_INTERACTION_BOOST := true
+TARGET_HAS_NO_POWER_STATS := true
 
 # Protobuf
 PROTOBUF_SUPPORTED := true
