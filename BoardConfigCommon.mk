@@ -18,7 +18,7 @@ LOCAL_PATH := device/samsung/msm8916-common
 # Includes
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
-# Inherit from common
+# Common Vendor
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
 # Architecture/platform
@@ -27,7 +27,11 @@ FORCE_32_BIT := true
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_BOARD_PLATFORM := msm8916
-TARGET_BOARD_PLATFORM_GPU       := qcom-adreno306
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
+TARGET_USES_QCOM_BSP := true
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_USES_QCOM_MM_AUDIO := true
+MSM_VIDC_TARGET_LIST := msm8916
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_CORTEX_A53 := true
