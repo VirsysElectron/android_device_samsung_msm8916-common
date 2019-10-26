@@ -203,9 +203,6 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/bin/mm-qcamera-daemon=22 \
     /system/vendor/bin/hw/rild=27
 
-# Peripheral manager
-TARGET_PER_MGR_ENABLED := true
-
 # Power
 TARGET_HAS_NO_WLAN_STATS := true
 TARGET_USES_INTERACTION_BOOST := true
