@@ -256,6 +256,10 @@ TARGET_LD_SHIM_LIBS := \
 # Snapdragon LLVM
 TARGET_USE_SDCLANG := true
 
+# Telephony
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+TARGET_RIL_VARIANT := caf
+
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
