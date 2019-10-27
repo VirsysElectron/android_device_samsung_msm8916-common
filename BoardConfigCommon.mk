@@ -21,6 +21,9 @@ TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 # Common Vendor
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
+#APEX
+TARGET_FLATTEN_APEX := true
+
 # Architecture/platform
 BOARD_VENDOR := samsung
 FORCE_32_BIT := true
