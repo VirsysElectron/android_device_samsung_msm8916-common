@@ -128,3 +128,12 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/$(LOCAL_MODULE)
 LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
+
+######################
+### init.rilcommon.rc
+include $(CLEAR_VARS)
+LOCAL_MODULE       := init.rilcommon.rc
+LOCAL_MODULE_CLASS := BOOT
+LOCAL_SRC_FILES    := init.rilcommon.rc
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init/hw
+include $(BUILD_PREBUILT)
