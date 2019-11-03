@@ -147,6 +147,8 @@ ifneq ($(wildcard $(shell pwd)/hardware/lineage/livedisplay),)
 DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/live_display_manifest.xml
 endif
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE += \
